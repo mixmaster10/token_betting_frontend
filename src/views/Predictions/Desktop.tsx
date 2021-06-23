@@ -168,7 +168,7 @@ const Desktop: React.FC = () => {
         <SplitWrapper ref={splitWrapperRef}>
           <PositionPane>
             {status === PredictionStatus.ERROR && <ErrorNotification />}
-            {status === PredictionStatus.PAUSED && <PauseNotification />}
+            {status === PredictionStatus.PAUSED && <Positions />}
             {status === PredictionStatus.LIVE && (
               <div>
                 <Positions />

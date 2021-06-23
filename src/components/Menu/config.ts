@@ -5,7 +5,7 @@ const config: (t: ContextApi['t']) => MenuEntry[] = (t) => [
   {
     label: t('Prediction (BETA)'),
     icon: 'PredictionsIcon',
-    href: '/prediction',
+    href: '/',
   },  
 ]
 
