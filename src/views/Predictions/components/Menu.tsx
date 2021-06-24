@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, HelpIcon, IconButton } from '@pancakeswap/uikit'
+import { Flex } from '@pancakeswap/uikit'
 import FlexRow from './FlexRow'
 import { PricePairLabel, TimerLabel } from './Label'
 import PrevNextNav from './PrevNextNav'
@@ -12,16 +12,6 @@ const SetCol = styled.div`
 
   ${({ theme }) => theme.mediaQueries.lg} {
     width: 270px;
-  }
-`
-
-const HelpButtonWrapper = styled.div`
-  order: 1;
-  margin: 0 8px 0 0;
-
-  ${({ theme }) => theme.mediaQueries.lg} {
-    order: 2;
-    margin: 0 0 0 8px;
   }
 `
 
@@ -56,17 +46,6 @@ const Menu = () => {
           <TimerLabelWrapper>
             <TimerLabel interval="5" unit="m" />
           </TimerLabelWrapper>
-          <HelpButtonWrapper>
-            {/* <IconButton
-              variant="subtle"
-              as="a"
-              href="https://docs.pancakeswap.finance/products/prediction"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <HelpIcon width="24px" color="white" />
-            </IconButton> */}
-          </HelpButtonWrapper>
           <HistoryButtonWrapper>
             <HistoryButton />
           </HistoryButtonWrapper>

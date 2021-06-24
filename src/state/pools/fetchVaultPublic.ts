@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import { convertSharesToCake } from 'views/Pools/helpers'
+// import { convertSharesToCake } from 'views/Pools/helpers'
 import { multicallv2 } from 'utils/multicall'
 import cakeVaultAbi from 'config/abi/cakeVault.json'
 import { getCakeVaultAddress } from 'utils/addressHelpers'
@@ -24,11 +24,11 @@ export const fetchPublicVaultData = async () => {
 
     const totalSharesAsBigNumber = shares ? new BigNumber(shares.toString()) : BIG_ZERO
     const sharePriceAsBigNumber = sharePrice ? new BigNumber(sharePrice.toString()) : BIG_ZERO
-    const totalCakeInVaultEstimate = convertSharesToCake(totalSharesAsBigNumber, sharePriceAsBigNumber)
+    // const totalCakeInVaultEstimate = convertSharesToCake(totalSharesAsBigNumber, sharePriceAsBigNumber)
     return {
       totalShares: totalSharesAsBigNumber.toJSON(),
       pricePerFullShare: sharePriceAsBigNumber.toJSON(),
-      totalCakeInVault: totalCakeInVaultEstimate.cakeAsBigNumber.toJSON(),
+      // totalCakeInVault: totalCakeInVaultEstimate.cakeAsBigNumber.toJSON(),
       estimatedCakeBountyReward: new BigNumber(estimatedCakeBountyReward.toString()).toJSON(),
       totalPendingCakeHarvest: new BigNumber(totalPendingCakeHarvest.toString()).toJSON(),
     }

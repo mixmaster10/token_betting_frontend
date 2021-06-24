@@ -10,7 +10,7 @@ import { setChartPaneState } from 'state/predictions'
 import { PredictionStatus } from 'state/types'
 import { useTranslation } from 'contexts/Localization'
 import TradingView from './components/TradingView'
-import { ErrorNotification, PauseNotification } from './components/Notification'
+import { ErrorNotification } from './components/Notification'
 import History from './History'
 import Positions from './Positions'
 
